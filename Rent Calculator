@@ -1,0 +1,11 @@
+Rent = int( input ("Enter Rent Amount="))
+Food = int(input ("Enter Total Food Amount="))
+Electricity_bill= int (input("Enter Electricity Bill="))
+Bill_unit = int(input("Enter bill unit number="))
+Total_People = int(input ("Enter total number of people="))
+
+Total_elec_Bill = Electricity_bill * Bill_unit
+Per_Person_Bill = (Rent + Food + Total_elec_Bill) // Total_People
+print(Per_Person_Bill)
+
+print (f"Total amount to be given per person ={Per_Person_Bill}")
