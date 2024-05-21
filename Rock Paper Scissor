@@ -1,0 +1,29 @@
+import random
+user_input = input("Enter User's Choice ('rock','paper','scissor') = ")
+
+Computer_list = ["rock","paper","scissor"]
+computer_input = random.choice(Computer_list)
+print ("Users choice - ",user_input)
+print ("computer input - ",computer_input)
+
+if user_input == computer_input:
+    print ("Same Choices, Game Tie..")
+
+elif user_input == "rock" :
+    if computer_input == "paper":
+        print("Between rock & paper computer wins")
+    else:
+        print("Between rock & scissor user wins")
+
+elif user_input == "paper":
+    if computer_input == 'rock':
+        print("Between paper & rock user wins")
+    else:
+        print("Between paper & scissor computer wins")
+
+elif user_input == "scissor":
+    if computer_input == 'rock':
+        print("Between scissor & rock computer wins")
+    else:
+        print("Between scissor & paper user wins")
+
